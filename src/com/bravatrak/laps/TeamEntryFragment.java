@@ -7,14 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class MainFragment extends Fragment {
+public class TeamEntryFragment extends Fragment {
+	public static final String TEAM_ENTRY_FRAGMENT_LABEL = "Add Team Member";
+
+
+	public static Fragment newInstance()
+	{
+		TeamEntryFragment fragment = new TeamEntryFragment();
+		
+		// Add Args
+		
+		return fragment;
+	}
+
 	
 	public View onCreateView(LayoutInflater inflater, 
 			ViewGroup parent, Bundle savedInstanceState){
-		View v = inflater.inflate(R.layout.fragment_main, parent, false);
-		
-		TextView t = (TextView)v.findViewById(R.id.Main_Test_TextView);
-		t.setText("Main Fragment");
+		View v = inflater.inflate(R.layout.fragment_team_entry, parent, false);
 		
 		return v;
 		

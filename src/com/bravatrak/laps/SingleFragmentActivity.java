@@ -9,7 +9,7 @@ public abstract class SingleFragmentActivity extends FragmentActivity {
 	public abstract Fragment createFragment();
 	
 	protected int getResLayoutId(){
-		return R.layout.activity_fragment;
+		return R.layout.activity_main_fragment;
 	}
 	
 	@Override

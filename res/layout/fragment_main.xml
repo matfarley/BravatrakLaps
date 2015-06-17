@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
-   
-    <TextView 
-        android:id="@+id/Main_Test_TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
- 
 
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:paddingTop="4dp">
+	
+	    <!-- Todays Laps Count Container -->
+	    <LinearLayout style="@style/homescreen_container">
+	        
+	        <TextView 
+	            style="@style/homescreen_container_heading"
+	            android:id="@+id/Main_Test_TextView"/>
+	        
+	    </LinearLayout>
+	    
+	    <!-- Reinforcement Chart Container -->
+	    <LinearLayout style="@style/homescreen_container">
+	       
+	        <TextView 
+	            style="@style/homescreen_container_heading"
+	            android:id="@+id/MainFragment_Reinforcement_Title_TextView"/>
+	    
+	    </LinearLayout>
+	    
+	    <!-- Laps Over Time Chart Container -->
+	    <LinearLayout style="@style/homescreen_container">
+	    
+	    </LinearLayout>
+	       
+	</LinearLayout>
+	
+</ScrollView>
